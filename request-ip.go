@@ -7,7 +7,7 @@ import (
 )
 
 // Standard headers list
-var requestHeaders = []string{"X-Client-Ip", "X-Forwarded-For", "Cf-Connecting-Ip", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-Ip", "X-Cluster-Client-Ip", "X-Forwarded", "Forwarded-For", "Forwarded"}
+var requestHeaders = []string{"Cf-Connecting-Ip", "X-Client-Ip", "X-Forwarded-For", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-Ip", "X-Cluster-Client-Ip", "X-Forwarded", "Forwarded-For", "Forwarded"}
 
 // GetClientIP - returns IP address string; The IP address if known, defaulting to empty string if unknown.
 func GetClientIP(r *http.Request) string {
